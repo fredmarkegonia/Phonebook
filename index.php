@@ -22,6 +22,7 @@
 				<form method="post" action="">
 					<button type="submit" name="add_button">ADD NEW</button>
 				</form>
+					<a href="lagin.php"><button type="submit" name="add_button">LOGOUT</button></a>
 			</div>
 		</div>
 	</div>
