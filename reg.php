@@ -23,7 +23,7 @@ if(isset($_POST['submit_btn'])){
 	}
 	
 	if(empty($usernameerr) && empty($passworderr)){
-		$insert_account = mysqli_query($con, "INSERT INTO `user` (`id`, `username`, `password`) VALUES (NULL, '$username', ('$password'))");
+		$insert_account = mysqli_query($con, "INSERT INTO `user` (`id`, `username`, `password`) VALUES (NULL, '$username', md5('$password'))");
 		if($insert_account){
 			echo "<script>alert('Added');</script>";
 		}
